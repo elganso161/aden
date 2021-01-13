@@ -1,0 +1,158 @@
+.cards__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards__list-item {
+  list-style: none;
+  width: 348px;
+  height: 371px;
+}
+
+.cards__list-item-link {
+  text-decoration: none;
+}
+
+.cards__list-item h3 {
+  padding-top: 230px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #ffffff;
+  transition: 0.5s;
+  &:hover {
+    text-shadow: #fc0 1px 0 10px;
+  }
+}
+.cards__list-item p {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: #ffffff;
+}
+
+.item1 {
+  position: relative;
+  background-image: url(../img/img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 348px 371px;
+  transition: 5s;
+  box-shadow: 0px 0px 15px 0px #ebb251;
+  &:hover {
+    background-size: 398px 421px;
+  }
+}
+
+.item1::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 145px;
+  z-index: 1;
+  background-image: url(../img/playicon.svg);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px #ebb251;
+}
+
+.item2 {
+  position: relative;
+  background-image: url(../img/img-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 348px 371px;
+  transition: 5s;
+  box-shadow: 0px 0px 15px 0px #ebb251;
+  &:hover {
+    background-size: 398px 421px;
+  }
+}
+
+.item2::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 145px;
+  z-index: 1;
+  background-image: url(../img/donateicon.svg);
+  width: 60px;
+  height: 60px;
+    border-radius: 50%;
+  box-shadow:0px 0px 15px 0px#ebb251;
+}
+
+.item3 {
+  position: relative;
+  background-image: url(../img/img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 348px 371px;
+  transition: 5s;
+  box-shadow: 0px 0px 15px 0px#ebb251;
+  &:hover {
+    background-size: 398px 421px;
+  }
+}
+
+.item3::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 145px;
+  z-index: 1;
+  background-image: url(../img/discordicon.svg);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px #ebb251;
+}
+
+.item4 {
+    position: relative;
+  background-image: url(../img/img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 348px 371px;
+  transition: 5s;
+    box-shadow: 0px 0px 15px 0px #ebb251;
+  &:hover {
+    background-size: 398px 421px;
+  }
+}
+
+.item4::before {
+
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 145px;
+  z-index: 1;
+  background-image: url(../img/discordicon.svg);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px #ebb251;
+}
+
+@media(max-width:1024px) {
+  .cards__list {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .cards__list-item {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}

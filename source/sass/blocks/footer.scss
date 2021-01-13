@@ -1,0 +1,63 @@
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+}
+
+.footer__list-item {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.item__right {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  color: #8b6f47;
+}
+
+.item__right:last-child {
+  margin-right: 0;
+}
+
+.upnova {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #8b6f47;
+  position: relative;
+}
+
+.upnova::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 175px;
+  z-index: 1;
+  background-image: url(../img/upnova.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 11px;
+  height: 14px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer__list {
+    display: block;
+  }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aden</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="./img/Deathcinematic.mp4" type="video/mp4" />
+    </video>
+    <heade class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list-logo">
+            <li class="nav__list-logo-item">
+              <a href="#"><img src="./img/header-logo.svg" alt="logo" /></a>
+            </li>
+            <li class="nav__list-logo-item">
+              <p class="nav__list-logo-item-title">
+                Online: &#160; <span>2995</span>
+              </p>
+              <p class="nav__list-logo-item-subtitle">Description</p>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div>
+          </div>
+          <ul class="nav__list-nav">
+            <li class="nav__list-nav-item nav-download">
+              <a href="#">Download</a>
+            </li>
+            <li class="nav__list-nav-item nav-wiki"><a href="#">Wiki</a></li>
+            <li class="nav__list-nav-item nav-donate">
+              <a href="#">Donate</a>
+            </li>
+            <li class="nav__list-nav-item nav-statistic">
+              <a href="#">Statistic</a>
+            </li>
+            <li class="nav__list-nav-item nav-forum"><a href="#">Forum</a></li>
+            <li class="nav__list-nav-item account">
+              <a href="#">My Account</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- <div class="line"></div> -->
+    </heade>
+    <main>
+      <section>
+        <div class="container">
+          <div class="news">
+            <div class="news__left">
+              <h2 class="news__left-title">Beta Opening of Aden</h2>
+              <p class="news__left-text">
+                Lineage 2: Essence X3 server will start 11 dec. We invite
+                everyone to test their strength and good luck. You are waiting
+                for unique events, a great online !
+              </p>
+              <a class="news-btn" href="#">Play now</a>
+            </div>
+            <div class="news__right">
+              <h2 class="news__right-title">Project News</h2>
+              <div>
+                <div class="slider">
+                  <div class="item">
+                    <img src="img/slider-img-1.jpg" alt="Первый слайд" />
+                    <!-- <div class="slide-date">30 December</div> -->
+                    <div class="slide-title">
+                      DISCOUNTS BY 30% UNTIL NEW YEAR 1
+                    </div>
+                    <div class="slide-text">
+                      We have prepared for you epic discounts until new year,
+                      don't hestitate, you have one more reason to start ...
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/slider-img-1.jpg" alt="Второй слайд" />
+                    <!-- <div class="slide-date">30 December</div> -->
+                    <div class="slide-title">
+                      DISCOUNTS BY 30% UNTIL NEW YEAR 2
+                    </div>
+                    <div class="slide-text">
+                      We have prepared for you epic discounts until new year,
+                      don't hestitate, you have one more reason to start ...
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/slider-img-1.jpg" alt="Третий слайд" />
+                    <!-- <div class="slide-date">30 December</div> -->
+                    <div class="slide-title">
+                      DISCOUNTS BY 30% UNTIL NEW YEAR 3
+                    </div>
+                    <div class="slide-text">
+                      We have prepared for you epic discounts until new year,
+                      don't hestitate, you have one more reason to start ...
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/slider-img-1.jpg" alt="Третий слайд" />
+                    <!-- <div class="slide-date">30 December</div> -->
+                    <div class="slide-title">
+                      DISCOUNTS BY 30% UNTIL NEW YEAR 4
+                    </div>
+                    <div class="slide-text">
+                      We have prepared for you epic discounts until new year,
+                      don't hestitate, you have one more reason to start ...
+                    </div>
+                  </div>
+
+                  <!-- <a class="prev" onclick="minusSlide()"></a> -->
+                  <!-- <a class="next" onclick="plusSlide()">&#10095;</a> -->
+                </div>
+
+                <div class="slider-dots">
+                  <a class="prev" onclick="minusSlide()"></a>
+                  <span
+                    class="slider-dots_item"
+                    onclick="currentSlide(1)"
+                  ></span>
+                  <span
+                    class="slider-dots_item"
+                    onclick="currentSlide(2)"
+                  ></span>
+                  <span
+                    class="slider-dots_item"
+                    onclick="currentSlide(3)"
+                  ></span>
+
+                  <span
+                    class="slider-dots_item"
+                    onclick="currentSlide(4)"
+                  ></span>
+
+                  <a class="next" onclick="plusSlide()"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="cards">
+          <div class="container">
+            <ul class="cards__list">
+              <li class="cards__list-item item1">
+                <a class="cards__list-item-link" href="#">
+                  <h3>Play Now</h3>
+                  <p>
+                    Create your account and download files for start playing
+                  </p>
+                </a>
+              </li>
+              <li class="cards__list-item item2">
+                <a class="cards__list-item-link" href="#">
+                  <h3>Donate</h3>
+                  <p>See how can your help us with your donation</p>
+                </a>
+              </li>
+              <li class="cards__list-item item3">
+                <a class="cards__list-item-link" href="#">
+                  <h3>Discord</h3>
+                  <p>Join our community on the discord channel</p>
+                </a>
+              </li>
+              <li class="cards__list-item item4">
+                <a class="cards__list-item-link" href="#">
+                  <h3>Play Now</h3>
+                  <p>
+                    Create your account and download files for start playing
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <ul class="footer__list">
+            <li class="footer__list-item footer-logo-img">
+              <img src="./img/footer-logo.svg" alt="logo" />
+            </li>
+            <li class="footer__list-item">
+              <a class="upnova" href="#">Дизайн — UPNOVA</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item item__right">TERMS AND CONDITIONS</li>
+            <li class="footer__list-item item__right">PRIVACY POLICY</li>
+            <li class="footer__list-item item__right">RULES</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/burger.js"></script>
+  </body>
+</html>

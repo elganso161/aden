@@ -1,0 +1,274 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list-logo {
+  display: flex;
+  align-items: center;
+}
+.nav__list-nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list-logo-item {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.nav__list-logo-item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+
+  position: relative;
+}
+
+.nav__list-logo-item-title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -25px;
+  z-index: 1;
+  background-image: url(../img/online.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.nav__list-logo-item-title span {
+  color: #33bd30;
+}
+
+.nav__list-logo-item-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffb548;
+}
+
+.nav__list-nav-item {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.nav__list-nav-item a {
+  text-decoration: none;
+  color: #c4c4c4;
+  text-transform: uppercase;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+  opacity: 1;
+  &:hover {
+    color: #fff;
+  }
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.account {
+  width: 186px;
+  height: 42px;
+  text-align: center;
+  margin-right: 0;
+  padding: 11px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  background: rgba(139, 111, 71, 0.1);
+  border: 1px solid #8b6f47;
+  cursor: pointer;
+
+  transition: 0.2s;
+  position: relative;
+
+  opacity: 1;
+  &:hover {
+    background: #8b6f47;
+  }
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.account::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 17px;
+  z-index: 1;
+
+  background-image: url(../img/acc.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+}
+
+.account a {
+  color: rgba(255, 181, 72, 1);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  &:hover {
+    color: rgba(255, 181, 72, 1);
+  }
+}
+
+.nav-download {
+  position: relative;
+}
+.nav-download::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -25px;
+  z-index: 1;
+
+  background-image: url(../img/download.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 18px;
+  height: 18px;
+}
+
+.nav-wiki {
+  position: relative;
+}
+.nav-wiki::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -21px;
+  z-index: 1;
+
+  background-image: url(../img/wiki.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+}
+
+.nav-donate {
+  position: relative;
+}
+.nav-donate::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -21px;
+  z-index: 1;
+
+  background-image: url(../img/donate.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+}
+
+.nav-statistic {
+  position: relative;
+}
+.nav-statistic::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -21px;
+  z-index: 1;
+
+  background-image: url(../img/statistic.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+}
+
+.nav-forum {
+  position: relative;
+}
+.nav-forum::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -21px;
+  z-index: 1;
+
+  background-image: url(../img/forum.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1024px) {
+  .nav__list-nav {
+    text-align: center;
+    display: none;
+  }
+  .nav__list-nav.nav-active {
+    width: 100%;
+    height: 1500px;
+    background-color: #191724;
+    position: fixed;
+    z-index: 10;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .nav__list-nav-item:first-child {
+    margin-top: 70px;
+  }
+
+  .nav__list-nav-item {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .nav__list-logo {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .nav-download::before {
+    display: none;
+  }
+  .nav-donate::before {
+    display: none;
+  }
+  .nav-wiki::before {
+    display: none;
+  }
+  .nav-statistic::before {
+    display: none;
+  }
+  .nav-forum::before {
+    display: none;
+  }
+}
+
+@media (max-width: 496px) {
+  .nav__list-logo {
+    display: block;
+  }
+
+  .nav__list-logo-item-title {
+    margin-left: 40px;
+  }
+  .nav__list-logo-item-subtitle {
+    margin-left: 40px;
+  }
+}
