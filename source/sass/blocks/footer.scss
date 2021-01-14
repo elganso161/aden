@@ -50,6 +50,24 @@
   height: 14px;
 }
 
+.footer-logo-img {
+  position: relative;
+}
+
+.footer-logo-img::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: 110px;
+  z-index: 1;
+  background-image: url(../img/footer-line.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7px;
+  height: 41px;
+}
+
 @media (max-width: 1024px) {
   .footer {
     justify-content: space-around;

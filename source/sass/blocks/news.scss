@@ -47,7 +47,7 @@
   text-decoration: none;
   display: block;
   width: 230px;
-  height: 60px;
+  min-height: 60px;
   background-color: rgb(216, 185, 11);
   border-radius: 5px;
   text-align: center;
@@ -73,23 +73,6 @@
   }
 }
 
-.footer-logo-img {
-  position: relative;
-}
-
-.footer-logo-img::before {
-  position: absolute;
-  content: "";
-  top: -3px;
-  left: 110px;
-  z-index: 10;
-  background-image: url(../img/footer-line.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 7px;
-  height: 41px;
-}
 
 @media (max-width: 1024px) {
   .news {

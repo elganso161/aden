@@ -6,14 +6,14 @@ let b1 = document.querySelector(".b1");
 let b2 = document.querySelector(".b2");
 let b3 = document.querySelector(".b3");
 
-burger.addEventListener("click", f1);
 
-function f1() {
+burger.addEventListener("click", () => {
   nav.classList.toggle("nav-active");
   b1.classList.toggle("burger-active");
   b2.classList.toggle("burger-active");
   b3.classList.toggle("burger-active");
-}
+  b.classList.toggle('body-active')
+});
 
 // bu.addEventListener('click', f1)
 
