@@ -1,7 +1,7 @@
 .cards__list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .cards__list-item {
@@ -89,8 +89,8 @@
   background-image: url(../img/donateicon.svg);
   width: 60px;
   height: 60px;
-    border-radius: 50%;
-  box-shadow:0px 0px 15px 0px#ebb251;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px#ebb251;
 }
 
 .item3 {
@@ -120,20 +120,19 @@
 }
 
 .item4 {
-    position: relative;
+  position: relative;
   background-image: url(../img/img-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 348px 371px;
   transition: 5s;
-    box-shadow: 0px 0px 15px 0px #ebb251;
+  box-shadow: 0px 0px 15px 0px #ebb251;
   &:hover {
     background-size: 398px 421px;
   }
 }
 
 .item4::before {
-
   position: absolute;
   content: "";
   top: -30px;
@@ -145,8 +144,16 @@
   border-radius: 50%;
   box-shadow: 0px 0px 15px 0px #ebb251;
 }
+@media (max-width: 1410px) {
+  .cards__list {
+    width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+}
 
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
   .cards__list {
     max-width: 500px;
     margin: 0 auto;
@@ -154,5 +161,26 @@
   .cards__list-item {
     margin: 0 auto;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 510px) {
+  .cards__list {
+    width: 320px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+  .item1::before {
+    left: 135px;
+  }
+  .item2::before {
+    left: 135px;
+  }
+  .item3::before {
+    left: 135px;
+  }
+  .item4::before {
+    left: 135px;
   }
 }
