@@ -73,8 +73,25 @@
   }
 }
 
+@media (max-width: 1410px) {
+  .news__left {
+  width: 50%;
+}
+
+.news__right {
+  width: 50%;
+}
+  .container-news {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
 
 @media (max-width: 1024px) {
+    .container-news {
+    width: 100%;
+  }
   .news {
     flex-wrap: wrap;
   }

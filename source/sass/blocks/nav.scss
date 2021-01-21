@@ -215,7 +215,8 @@
   height: 16px;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1224px) {
   .nav__list-nav {
     text-align: center;
     display: none;
@@ -241,7 +242,7 @@
   }
 
   .nav__list-logo {
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-top: 15px;
   }
 
